@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../.."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"terminal.integrated.fontFamily": "monospace",
+		"terminal.integrated.fontSize": 10
+	}
+}
