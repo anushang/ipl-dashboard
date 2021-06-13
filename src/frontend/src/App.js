@@ -1,6 +1,7 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { TeamPage } from './pages/TeamPage';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {MatchPage} from './pages/MatchPage';
 function App() {
   return (
     <div className="App">
