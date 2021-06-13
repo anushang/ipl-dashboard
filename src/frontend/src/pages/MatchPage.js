@@ -5,19 +5,6 @@ import { useParams } from 'react-router-dom'
 
 export const TeamPage = () => {
 
-  const [team, setTeam] = useState({ matches: [] });
-  const { teamName } = useParams();
-  useEffect(
-    () => {
-      const fetchMatches = async () => {
-        const respone = await fetch(`http://0.0.0.0:8080/team/${teamName}`);
-        const data = await respone.json();
-        setTeam(data);
-
-      };
-      fetchMatches();
-    }, [teamName] // brackets define when useEffect changes useeffect
-  )
   if (!team || !team.teamName) {
     return <h1>Team Not Found!</h1>
   }
